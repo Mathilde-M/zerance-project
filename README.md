@@ -1,4 +1,4 @@
-# Studio Zerance test
+# Studio Zerance
 'Zerance project' est un projet test pour le Studio Zerance.
 
 # Installation et lancement

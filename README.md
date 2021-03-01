@@ -23,7 +23,7 @@ Fonts:
 - Le contenu de la section portfolio change et devient un gif afin d'obtenir un rendu plus esthétique
 qu'une colonne de logos les uns à la suite des autres
 
-- Le slider disparait pour une meilleure exerience utilisateur
+- Le slider disparait pour une meilleure experience utilisateur
 
 
 

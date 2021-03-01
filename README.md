@@ -7,7 +7,7 @@ Accéder a la page:
 - Ouvrir le fichier index.html dans le  navigateur
 - Les images, fonts et fichiers css - js sont dans le répertoire 'assets'
 
-#Fonctionnement technique:
+# Fonctionnement technique:
 Technologies:
 - Bootstrap
 - JQuery
@@ -18,7 +18,7 @@ Fonts:
 - Futura-Bold
 
 
-#Version Mobile:
+# Version Mobile:
 Evolutions:
 - Le contenu de la section portfolio change et devient un gif afin d'obtenir un rendu plus esthetique
 qu'une colonne de logos les uns a la suite des autres

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerance project</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<!-- Modal -->
+<div class="modal fade" id="contactModalCenter" tabindex="-1" role="dialog" aria-labelledby="contactModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body d-flex flex-column align-items-center">
+                <div class="modal-logo-wrapper">
+                    <img class="modal-logo" src="assets/images/logo.png" alt="logo">
+                </div>
+                <div class="modal-title">
+                    <h3>Contactez-nous!</h3>
+                </div>
+                <div>
+                    <form  class="modal-form">
+                        <div class="form-group">
+                            <input id="name" type="text" class="checker form-control"  placeholder="Prénom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="checker form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="checker form-control"  rows="5"  placeholder="Message" required></textarea>
+                        </div>
+                        <div class="popuptext d-none" id="myPopup"></div>
+                        <button class="popup btn modal-btn" onclick="submitContact()" type="button" value="Valider">Valider</button>
+                    </form>
+                    <div>
+                        <button onclick="closeAll()" class="close-all modal-btn d-none" data-dismiss="modal">ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal end -->
+
+<div class="page_wrapper">
+    <div class="header container-fluid">
+        <div class="row d-flex justify-content-between">
+            <img class="logo" src="assets/images/logo.png" alt="Logo">
+            <nav class="navbar">
+                <a class="nav-item navbar-brand" href="#portfolio">Nos Clients</a>
+                <a class="nav-item navbar-brand" href="#slider">Notre Offre</a>
+                <a class="nav-item navbar-brand" href="#infinite-text">Le Studio</a>
+                <a class="nav-item navbar-brand c-pointer" data-toggle="modal" data-target="#contactModalCenter">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="jumbotron d-flex jumbotron-fluid">
+            <div class="container jumb-container">
+                <div class="row d-flex flex-column">
+                    <p class="lead">Since 2016</p>
+                    <h1 class=" display-4"><span class="unbold"><</span><span class="jumbotron-title">We create from scratch amazing <span class="img-underscore">Shopify</span>/</span><span class="unbold">></span> </h1>
+                    <a class="mob-btn btn btn-lg" data-toggle="modal" data-target="#contactModalCenter" role="button">Contactez-nous
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <p class="por-title lead align-self-center">Nos clients sont géniaux !</p>
+            <div class="row d-flex">
+                <div class="portfolio-gif">
+                    <img src="assets/images/portfolio.gif" alt="Gif">
+                </div>
+                <div class="portfolio-mobile">
+                    <div class="slider-btn">
+                        <span data-toggle="modal" data-target="#contactModalCenter" class="unbold"> Comme eux, profitez de notre <span class="unbold"><</span><span class="portfolio-underscore img-underscore">expertise/</span><span class="unbold">></span></span>
+                    </div>
+                </div>
+                <a href="https://yokoshop.com" class="client-logo col"><img class="client-img img-responsive" src="assets/images/clients/yoko.jpg" alt=" Client Logo"></a>
+                <div class="client-logo col"><img class="client-img img-responsive" src="assets/images/clients/webedia.jpg" alt=" Client Logo"></div>
+                <div class="client-logo col"><img class="client-img img-responsive" src="assets/images/clients/avnier.jpg" alt=" Client Logo"></div>
+                <div class="client-logo col"><img class="client-img img-responsive" src="assets/images/clients/seasonly.jpg" alt=" Client Logo"></div>
+                <div class="client-logo col"><img class="client-img img-responsive" src="assets/images/clients/joone.png" alt=" Client Logo"></div>
+            </div>
+            <div class="row d-flex">
+                <div class="client-logo col"><img class="client-img img-responsive" src="assets/images/clients/uni.png" alt=" Client Logo"></div>
+                <div class="client-logo col"><img class="client-img img-responsive" src="assets/images/clients/boxtal.jpg" alt=" Client Logo"></div>
+                <div class="client-logo col"><img class="client-img img-responsive" src="assets/images/clients/fempo.jpg" alt=" Client Logo"></div>
+                <div class="client-logo col"><img class="client-img img-responsive" src="assets/images/clients/bonsoirs.jpg" alt=" Client Logo"></div>
+                <div class="client-logo col"><img class="client-img img-responsive" src="assets/images/clients/mars.jpg" alt=" Client Logo"></div>
+            </div>
+            <div class="row d-flex">
+                <div class="client-logo col"><img class="client-img img-responsive" src="assets/images/clients/bigfernand.jpg" alt=" Client Logo"></div>
+                <div class="client-logo col"><img class="client-img img-responsive" src="assets/images/clients/lafourche.jpg" alt=" Client Logo"></div>
+                <div class="client-logo col"><img class="client-img img-responsive" src="assets/images/clients/riviera.jpg" alt=" Client Logo"></div>
+                <div class="client-logo col"><img class="client-img img-responsive" src="assets/images/clients/cdiscount.jpg" alt=" Client Logo"></div>
+                <div class="client-logo col"><img class="client-img img-responsive" src="assets/images/clients/tealer.png" alt=" Client Logo"></div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="mobile-slider-text">
+            <div class="mobile-slider-wrapper">
+
+            <div class="slider-lead lead">from scratch /</div>
+            <div>
+                <img class="slider-logo img-responsive" src="assets/images/clients/seasonly-white.jpg" alt=" Client Logo">
+            </div>
+            <div class="slider-prg">
+                Développement site from scratch et d'un quizz personnalisé avec abonnement.
+            </div>
+            <div class="slider-btn">
+                <span class="unbold"><</span><span class="slider-underscore img-underscore">Voir plus/</span><span class="unbold">></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider" id="slider">
+        <div class="slider-text">
+            <div class="slider-lead lead">from scratch /</div>
+            <div>
+                <img class="slider-logo img-responsive" src="assets/images/clients/seasonly-white.jpg" alt=" Client Logo">
+            </div>
+            <div class="slider-prg">
+                Développement site from scratch et d'un quizz personnalisé avec abonnement. Dével- oppement site from scratch et d'un quizz personnalisé avec abonnement.
+            </div>
+            <div class="slider-btn">
+                <span class="unbold"><</span><span class="slider-underscore img-underscore">Voir plus/</span><span class="unbold">></span>
+            </div>
+        </div>
+        <div class="slick-slideshow__slide">
+            <img class="slider-img" src="assets/images/slide/Artboard_1.jpg" alt="Brandname slide">
+        </div>
+        <div class="slick-arr">
+            <div class="prev"></div>
+            <div class="next"><i class="fa fa-chevron-right"></i></div>
+        </div>
+        <div class="slick-slideshow__slide">
+            <img class="slider-img" src="assets/images/slide/Artboard_2.jpg" alt="Brandname slide">
+        </div>
+    </div>
+
+    <div class="infinite-text" id="infinite-text">
+        <div class="container-fluid">
+            <div class="ticker-wrap">
+                <div class="ticker">
+                    <div class="ticker-item">Good cat Bad cat / </div>
+                    <div class="ticker-item">Frederic Diefental / </div>
+                    <div class="ticker-item">Quand c'est trop, c'est Tropico / </div>
+                    <div class="ticker-item">Qu'est-ce qui est jaune et qui attend? / </div>
+                    <div class="ticker-item">Elle est ou la poulette / </div>
+                    <div class="ticker-item">Faut pas respirer la compote ca fait tousser  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="assets/main.js"></script>
+
+</body>
+</html>
